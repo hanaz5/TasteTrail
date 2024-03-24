@@ -7,11 +7,11 @@ def main():
     if 'edited_ingredients' not in st.session_state:
         st.session_state.edited_ingredients = ""
 
-    st.set_page_config(page_title='TasteTrail', page_icon='images\icon.png')
+    st.set_page_config(page_title='TasteTrail', page_icon="https://raw.githubusercontent.com/hanaz_5/TasteTrail/main/images/icon.png")
     with open('styles.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-    LOGO_IMAGE_URL = 'images\logo.png'
+    LOGO_IMAGE_URL = "https://raw.githubusercontent.com/hanaz_5/TasteTrail/main/images/logo.png"
     st.image(LOGO_IMAGE_URL, caption='', use_column_width=True)
     st.markdown("""
     <div class="logo-container">
