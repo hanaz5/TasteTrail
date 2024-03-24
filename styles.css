@@ -1,0 +1,40 @@
+/* Background */
+.st-emotion-cache-uf99v8{
+    background-color: #F7FBE5;
+    /*F5F5E5*/
+}
+
+[data-testid="stSidebar"] {
+    background-color: #E7EFC5;
+}
+
+.logo-container {
+    text-align: center; /* Center-align the logo */
+}
+
+.logo-container p {
+    font-size: 18px; /* Adjust font size */
+    margin-top: 10px; /* Adjust spacing between title and subtitle */
+    color: #6E451C;
+}
+
+/* success alert*/
+.st-g8 {
+    background-color: #7d9e66ce;
+}
+
+/* form button*/
+.st-emotion-cache-19rxjzo:active {
+    color: rgb(255, 255, 255);
+    border-color: #DD6136;
+    background-color: #7C9E66;
+}
+.st-emotion-cache-19rxjzo:hover {
+    color: #DD6136;
+    border-color: #DD6136;
+}
+
+/* output text*/
+.st-emotion-cache-1hynsf2 {
+    color: #2B303A;
+}

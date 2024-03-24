@@ -1,0 +1,4 @@
+Pillow
+protobuf
+Requests
+streamlit
