@@ -65,6 +65,7 @@ def main():
                             st.sidebar.warning("Please enter at least one ingredient.")
             except Exception as e:
                 #error for when image cannot be recognized
+                st.toast('Cannot be recognized.', icon="😔")
                 st.sidebar.error("Ingredients cannot be recognized. Please input the ingredients manually.")
 
                 #manual method will be display due to error above
