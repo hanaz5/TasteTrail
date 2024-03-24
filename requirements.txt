@@ -2,3 +2,4 @@ Pillow
 protobuf
 Requests
 streamlit
+google-generativeai
