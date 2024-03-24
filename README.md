@@ -1,4 +1,6 @@
-![Logo of the project](https://github.com/hanaz5/TasteTrail/blob/main/images/icon.png?raw=true)
+<div style="text-align:center;">
+  <img src="https://github.com/hanaz5/TasteTrail/blob/main/images/icon.png?raw=true" alt="Logo of the project" width="200">
+</div>
 
 # TasteTrAIl
 > Turn your kitchen chaos into culinary creativity – snap, identify, and savor!
