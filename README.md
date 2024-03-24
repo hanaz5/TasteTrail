@@ -3,7 +3,7 @@
 # TasteTrAIl
 > Turn your kitchen chaos into culinary creativity – snap, identify, and savor!
 
-TasteTrail is A generative AI application, powered by Streamlit. TasteTrail was built using Python, with the integration of Gemini API and Edamam API. Gemini API helped in text generation and vision (image recognition) meanwhile Edamam API provides a huge recipe library to be implemented within the application.
+TasteTrail is a generative AI application, powered by Streamlit. TasteTrail was built using Python, with the integration of Gemini API and Edamam API. Gemini API helped in text generation and vision (image recognition) meanwhile Edamam API provides a huge recipe library to be implemented within the application.
 
 ## Features
 
