@@ -3,9 +3,12 @@ import streamlit as st
 import time
 from RecipeClass import RecipeClass as rc
 
+#callback function to update edited ingredients whenever text area value changes
+@st.cache_data()
+def update_edited_ingredients(ingredients):
+    st.session_state.edited_ingredients = ingredients
+
 def main():
-    if 'edited_ingredients' not in st.session_state:
-        st.session_state.edited_ingredients = ""
 
     st.set_page_config(page_title='TasteTrail', page_icon="https://github.com/hanaz5/TasteTrail/blob/main/images/icon.png?raw=true")
     with open('styles.css') as f:
@@ -36,8 +39,8 @@ def main():
 
                 if identified_ingredients:
                     #identified ingredients in text area so that user can still edit
-                    st.session_state.edited_ingredients = st.sidebar.text_area("Edit Ingredients (separated by commas):", value=", ".join(identified_ingredients))
-
+                    edited_ingredients = st.sidebar.text_area("Edit Ingredients (separated by commas):", value=", ".join(identified_ingredients))
+                    update_edited_ingredients(edited_ingredients)
                     #advanced search
                     with st.sidebar.expander("Advanced Search"):
                         diet_pref = st.selectbox("Diet preference:", ["Any", "Dairy-free", "Gluten-free", "Keto", "Vegan", "Vegetarian"], index=0)
