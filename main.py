@@ -52,7 +52,10 @@ def main():
                     if st.sidebar.button("Generate Recipes"):
                         st.toast('Loading...')
                         time.sleep(1.7)
-                        ingredient_list = [ingredient.strip() for ingredient in st.session_state.edited_ingredients.split(",")]
+                        if "edited_ingredients" in st.session_state:
+                            ingredient_list = [ingredient.strip() for ingredient in st.session_state.edited_ingredients.split(",")]
+                        else:
+                            ingredient_list = identified_ingredients
                         if ingredient_list:
                             recipe_suggestions = rc.generate_recipe_suggestions(ingredient_list, allergies, halal_check, diet_pref, max_prep_time=max_prep_time)
                             if recipe_suggestions:
