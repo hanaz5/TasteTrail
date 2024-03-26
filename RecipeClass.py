@@ -15,7 +15,7 @@ class RecipeClass:
 
         #generate content using the vision model
         vision_model = genai.GenerativeModel('gemini-pro-vision')
-        response = vision_model.generate_content(["List all the item separated by comma. Just item, no need sentences such as 'There are various...'. Also no need for collective nouns such as two eggs or a sack of flour just the ingredient. Please avoid uncookable item such as cat, table, book etc.", image])
+        response = vision_model.generate_content(["List all the item separated by comma. Just item, no need sentences such as 'There are various...'. Also no need for collective nouns such as two eggs or a sack of flour just the ingredient. Please avoid uncookable item such as cat, table, book etc. If image have uncookable item only, write 'non ingredient items'", image])
         
         #extract the recognized text from the response
         recognized_text = response.text
